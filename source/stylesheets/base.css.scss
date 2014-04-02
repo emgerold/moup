@@ -6,15 +6,20 @@ body, html {
 	text-transform: uppercase;
 	line-height: 1;
 	color:#222;
+	margin:0;
+	padding:0;
+	text-align: center;
 }
 h1, h2 {
-	text-align: center;
+
 }
 
 h1 {
 	font-size:90px;
 	letter-spacing: -3px;
-	margin-bottom: 0;
+	margin: 0;
+	padding-top:10%;
+
 }
 h2 {
 	font-size:83px;
@@ -24,11 +29,28 @@ h2 {
 }
 
 p {
-	text-align: center;
 	font-size: 30px;
-	margin: 21px 0 0 0;
+	margin: 21px 0;
 	color:#999;
 	> span {
 		display:inline-block;
 	}
+}
+
+em {
+	position:fixed;
+	bottom:5%;
+	text-align: left;
+	font-size:24px;
+	color:#555;
+	overflow:hidden;
+	display:block;
+	width:90%;
+	padding:0 5%;
+	margin:0 auto;
+	> span {
+		float: right;
+
+	}
+
 }
