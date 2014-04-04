@@ -54,6 +54,16 @@ set :images_dir, 'img'
 
 set :haml, { :ugly => true, :format => :html5 }
 
+# Deploy options
+activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method   = :ftp
+    deploy.host     = "dariafrick.ch"
+    deploy.path     = "/"
+    deploy.user     = "web631f1"
+    deploy.password = "r00phi0"
+end
+
 # Build-specific configuration
 configure :build do
 
