@@ -1,0 +1,11 @@
+!!!
+%html{:lang => "de"}
+	%head
+		%meta{:charset => "utf-8"}
+		%meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+		%title= data.page.title || "Daria Frick - Fotografin"
+		%meta{:content => data.page.description || "SET YOUR SITE DESCRIPTION", :name => "description"}
+		%meta{:content => "width=device-width", :name => "viewport"}
+		= stylesheet_link_tag "style"
+	%body
+		= yield
