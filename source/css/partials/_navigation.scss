@@ -1,0 +1,20 @@
+nav.meta {
+	position:absolute;
+	top:95%;
+	left:70%;
+	overflow:hidden;
+
+	> ul {
+		overflow:hidden;
+
+		> li {
+			float:left;
+			margin-right:15px;
+
+			&:last-child {
+				margin-right:0;
+			}
+		}
+	}
+
+}
