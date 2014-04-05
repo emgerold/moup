@@ -1,7 +1,7 @@
 nav.meta {
 	position:absolute;
-	top:95%;
-	left:70%;
+	top:2%;
+	right:2%;
 	overflow:hidden;
 
 	> ul {
@@ -9,10 +9,13 @@ nav.meta {
 
 		> li {
 			float:left;
-			margin-right:15px;
+			margin-right:10px;
+			padding-right: 10px;
+			border-right: 1px solid $links;
 
 			&:last-child {
 				margin-right:0;
+				border-right: 0px;
 			}
 		}
 	}
