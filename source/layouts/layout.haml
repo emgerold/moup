@@ -7,5 +7,10 @@
 		%meta{:content => data.page.description || "SET YOUR SITE DESCRIPTION", :name => "description"}
 		%meta{:content => "width=device-width", :name => "viewport"}
 		= stylesheet_link_tag "style"
+		= javascript_include_tag 'jquery.v.2.1.0', 'main'
+
+		%script
+			jQuery(document).ready(function($){DF_init()});
+
 	%body
 		= yield
